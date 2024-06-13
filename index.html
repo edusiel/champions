@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UEFA Champions League</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Comic Neue', cursive;
+            background-color: #f0f0f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: url('https://venedigitall.com/wp-content/uploads/2024/03/5c617a9fcf0a8.jpeg') no-repeat center center/cover;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            background: rgba(0, 0, 0, 0.5);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .section {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #0056b3;
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+            max-height: 200px;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+
+        .more-info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e0e0e0;
+            border-radius: 8px;
+        }
+
+        .more-info p {
+            margin: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .social-media a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .youtube-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .youtube-section iframe {
+            width: 100%;
+            height: 315px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>UEFA Champions League</h1>
+    </header>
+    <nav>
+        <a href="#history">Historia</a>
+        <a href="#teams">Equipos</a>
+        <a href="#players">Jugadores Destacados</a>
+        <a href="#records">Récords</a>
+        <a href="#videos">Videos</a>
+        <a href="#about">Acerca de</a>
+    </nav>
+    <div class="container">
+        <section id="history" class="section">
+            <h2>Historia</h2>
+            <p>La UEFA Champions League es la competición de clubes más prestigiosa del fútbol europeo, organizada por
+                la Unión de Asociaciones Europeas de Fútbol (UEFA) desde 1955. Originalmente conocida como la Copa de
+                Europa, la competición ha evolucionado con los años, adoptando su actual nombre en 1992.</p>
+            <button onclick="toggleInfo('info-history')">Más información</button>
+            <div id="info-history" class="more-info">
+                <p>Desde su creación, la Champions League ha crecido en popularidad y prestigio. El Real Madrid fue el
+                    primer ganador del torneo y sigue siendo el equipo más exitoso en la historia de la competición.</p>
+            </div>
+            <img src="https://editorial.uefa.com/resources/0250-0e6a0426f191-f224d5a2881a-1000/1444785_w1.jpeg"
+                alt="Historia de la UEFA Champions League">
+            </section>
+            <section id="teams" class="section">
+                <h2>Equipos</h2>
+                <p>La competición cuenta con la participación de los mejores equipos de las ligas europeas. Algunos de los
+                    equipos más exitosos incluyen el Real Madrid, el FC Barcelona, el Bayern Múnich, el AC Milan y el
+                    Liverpool.</p>
+                <button onclick="toggleInfo('info-teams')">Más información</button>
+                <div id="info-teams" class="more-info">
+                    <p>El Real Madrid ha ganado el torneo en 15 ocasiones, siendo el club con más títulos. Otros clubes
+                        notables con múltiples títulos incluyen el AC Milan con 7, y el Bayern Múnich y el Liverpool con 6
+                        cada uno.</p>
+                </div>
+                <img src="https://lopezdoriga.com/wp-content/uploads/2024/06/real-madrid-champions-15.jpg"
+                    alt="Equipos de la UEFA Champions League">
+            </section>
+            <section id="players" class="section">
+                <h2>Jugadores Destacados</h2>
+                <p>La UEFA Champions League ha visto a algunos de los jugadores más talentosos del mundo. Entre ellos se
+                    destacan Lionel Messi, Cristiano Ronaldo, Zinedine Zidane, Ronaldinho y muchos más.</p>
+                <button onclick="toggleInfo('info-players')">Más información</button>
+                <div id="info-players" class="more-info">
+                    <p>Cristiano Ronaldo es el máximo goleador de la historia de la Champions League con más de 130 goles.
+                        Lionel Messi le sigue de cerca con más de 120 goles. Ambos jugadores han sido fundamentales en sus
+                        respectivos equipos.</p>
+                </div>
+                <img src="https://media.cnn.com/api/v1/images/stellar/prod/cnne-871489-cristiano-ronaldo-el-senor-de-la-champions.jpg?c=original"
+                    alt="Jugadores Destacados de la UEFA Champions League">
+            </section>
+            <section id="records" class="section">
+                <h2>Récords</h2>
+                <p>La competición ha sido testigo de numerosos récords, incluyendo el mayor número de goles en una
+                    temporada, el mayor número de títulos ganados por un solo club y muchos más.</p>
+                <button onclick="toggleInfo('info-records')">Más información</button>
+                <div id="info-records" class="more-info">
+                    <p>Entre los récords destacados se encuentra el del jugador con más títulos, Paco Gento, quien ganó la
+                        Copa de Europa en seis ocasiones con el Real Madrid, aunque recientemente varios jugadores del Real Madrid
+                        se han agregado a esa presitigiosa lista, como Luka Modric o Toni Kroos, entre otros. Además, el récord del
+                        mayor número de goles en
+                        una temporada pertenece a Cristiano Ronaldo.</p>
+                </div>
+                <img src="https://www.vbetnews.com/uploads/2018/05/ronaldo-8.jpg" alt="Récords de la UEFA Champions League">
+            </section>
+            <section id="about" class="section">
+                <h2>Acerca de</h2>
+                <p>La UEFA Champions League no solo celebra el talento en el campo de juego, sino también el espíritu
+                    deportivo y la pasión de los aficionados en todo el mundo.</p>
+                <button onclick="toggleInfo('info-about')">Más información</button>
+                <div id="info-about" class="more-info">
+                    <p>Además del prestigio deportivo, la UEFA Champions League genera un impacto económico significativo,
+                        atrayendo a millones de espectadores y generando ingresos para los clubes participantes.</p>
+                </div>
+                <img src="https://titansports.mx/wp-content/uploads/2024/01/LA-CHAMPIONS-LEAGUE-EL-TORNEO-QUE-MUEVE-MILLONES-Y-CAMBIA-VIDAS-EN-EL-FUTBOL-EUROPEOB.jpg"
+                    alt="Acerca de la UEFA Champions League">
+            </section>
+        <section id="videos" class="youtube-section">
+            <h2>Videos</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xCpUgGfbUZo?si=MMf9WzZ6AXr5W6JE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/amJK7OvZ0T8?si=LcAQXJDsOvH9DgPp"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6CLJ_XVTqcQ?si=MYXf52QkBgjdzfyM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </div>
+    <footer>
+        <p>Sígueme en las redes sociales:</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=100077109999769" target="_blank">Facebook</a> |
+            <a href="https://www.youtube.com/watch?v=y1BQNRywQYw" target="_blank">Youtube</a> |
+            <a href="https://www.instagram.com/eduar_do570/" target="_blank">Instagram</a>
+        </div>
+        <p>Eduardo Usiel Rodríguez Morales 4-I</p>
+    </footer>
+    <button id="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            if (info.style.display === "block") {
+                info.style.display = "none";
+            } else {
+                info.style.display = "block";
+            }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        window.onscroll = function () {
+            const backToTopButton = document.getElementById('back-to-top');
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopButton.style.display = 'flex';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        };
+    </script>
+</body>
+
+</html>
